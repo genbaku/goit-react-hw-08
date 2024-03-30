@@ -2,17 +2,17 @@ import { lazy, Suspense, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
-import Layout from './components/Layout/Layout';
+import Layout from './Layout/Layout';
 import { useDispatch, useSelector } from "react-redux";
-import { refreshUser } from "./redux/auth/operations";
-import { selectIsRefreshing } from "./redux/auth/selectors";
-import { RestrictedRoute } from "./components/RestrictedRoute";
-import { PrivateRoute } from "./components/PrivateRoute";
+import { refreshUser } from "../redux/auth/operations";
+import { selectIsRefreshing } from "../redux/auth/selectors";
+import { RestrictedRoute } from "./RestrictedRoute";
+import { PrivateRoute } from "./PrivateRoute";
 
-const Home = lazy(() => import("./pages/Home"));
-const RegisterPage = lazy(() => import("./pages/Register"));
-const LoginPage = lazy(() => import("./pages/Login"));
-const Contacts = lazy(() => import("./pages/Contacts"));
+const Home = lazy(() => import("../pages/Home"));
+const RegisterPage = lazy(() => import("../pages/Register"));
+const LoginPage = lazy(() => import("../pages/Login"));
+const Contacts = lazy(() => import("../pages/Contacts"));
 
 
 
