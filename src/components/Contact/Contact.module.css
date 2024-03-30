@@ -1,4 +1,4 @@
-.il{
+.li {
     display: flex;
     justify-content: space-between;
     width: 240px;
@@ -6,13 +6,15 @@
     border-radius: 4px;
     padding: 8px;
 }
-.b{
+
+.b {
     margin-top: auto;
     margin-bottom: auto;
     height: 30px;
 }
-p{
-    margin: 4px;    
+
+p {
+    margin: 4px;
     display: flex;
     gap: 4px;
 }
